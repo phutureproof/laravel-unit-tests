@@ -30,7 +30,8 @@ class NewExampleServiceTest extends TestCase
         $this->assertTrue($this->SUT->getFoo() === 'test');
 
         $this->SUT->setBar('test');
-        $this->assertTrue($this->SUT->getBar() === 'test');
+        // failing test
+        $this->assertTrue($this->SUT->getBar() === 'this should break');
 
     }
 }
