@@ -15,7 +15,7 @@ class NewExampleServiceControllerTest extends TestCase
     public function test_controller_recieves_service()
     {
         $response = $this->get('/NewExampleServiceController');
-        $response->assertStatus(200);
+        $response->assertStatus(400);
     }
 
     public function test_controller_calls_service_method()
