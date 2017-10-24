@@ -15,4 +15,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/NewExampleServiceController', 'NewExampleServiceController@index');
+
 Route::get('/{page}', 'PagesController@index');
+

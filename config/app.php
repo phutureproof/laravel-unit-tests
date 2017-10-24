@@ -177,6 +177,7 @@ return [
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
         App\Providers\DalesExampleProvider::class,
+        App\Providers\NewExampleProvider::class,
 
     ],
 
