@@ -3,5 +3,8 @@ php:
   - '7.1'
 
 script:
-  - composer install
-  - phpunit --verbose
+  - cp .env.example .env
+  - composer selfupdate
+  - composer install --no-interaction
+  - php artisan key:generate
+  - vendor/bin/phpunit --verbose
