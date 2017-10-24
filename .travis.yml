@@ -5,6 +5,6 @@ php:
 script:
   - cp .env.example .env
   - composer selfupdate
-  - composer install --no-interaction
+  - composer install --no-interaction --quiet
   - php artisan key:generate
   - vendor/bin/phpunit --verbose
