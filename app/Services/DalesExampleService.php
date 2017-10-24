@@ -17,6 +17,6 @@ class DalesExampleService
      */
     public function throwSomething()
     {
-        throw new \Exception("Something went wrong", 50);
+        throw new \Exception("Something went wrong", 99);
     }
 }
