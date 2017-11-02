@@ -15,7 +15,9 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/NewExampleServiceController', 'NewExampleServiceController@index');
+Route::post('/passwordHash', 'PasswordController@handle');
 
+Route::get('/NewExampleServiceController', 'NewExampleServiceController@index');
 Route::get('/{page}', 'PagesController@index');
+
 
